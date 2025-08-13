@@ -4,13 +4,13 @@
   "version": "1.0.0",
   "type": "module",
   "keywords": ["education", "problem-based-learning", "accessibility", "inclusive-design", "react"],
-  "author": "BoltPath Team",
+  "author": "lex zgeria",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/boltpath-pbl-platform.git"
+    "url": "https://github.com/Yuki-az-23/boltpath.git"
   },
-  "homepage": "https://github.com/yourusername/boltpath-pbl-platform#readme",
+  "homepage": "https://github.com/Yuki-az-23/boltpath.git",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

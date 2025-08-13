@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Label } from './ui/label';
 import { Textarea } from './ui/textarea';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from './ui/dialog';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { Checkbox } from './ui/checkbox';
@@ -11,19 +11,18 @@ import { Badge } from './ui/badge';
 import { Alert, AlertDescription } from './ui/alert';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
 import { Progress } from './ui/progress';
-import { Plus, Edit, Trash2, Calendar, Users, ClipboardList, AlertCircle, Search, Clock, Target, Brain, BookOpen, CheckCircle, PlayCircle, PauseCircle } from 'lucide-react';
+import { Plus, Edit, Trash2, Calendar, Users, AlertCircle, Search, Target, Brain } from 'lucide-react';
 import { useAuth, useAppState, PBLAssignment, StudentProgress } from '../App';
 import { toast } from 'sonner';
 
 export function AssignmentManagement() {
   const { teacher } = useAuth();
-  const { students, assignments, studentProgress, addAssignment, updateAssignment, deleteAssignment, updateStudentProgress } = useAppState();
+  const { students, assignments, studentProgress, addAssignment, updateAssignment, deleteAssignment } = useAppState();
   const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [editingAssignment, setEditingAssignment] = useState<PBLAssignment | null>(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [statusFilter, setStatusFilter] = useState<'all' | 'draft' | 'active' | 'completed' | 'archived'>('all');
   const [activeTab, setActiveTab] = useState('basic');
-  const [selectedAssignment, setSelectedAssignment] = useState<PBLAssignment | null>(null);
   const [showProgressTracking, setShowProgressTracking] = useState(false);
 
   // Initial form state

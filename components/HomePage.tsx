@@ -5,7 +5,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/
 import { Dialog, DialogContent, DialogDescription, DialogHeader, DialogTitle, DialogTrigger } from './ui/dialog';
 import { Label } from './ui/label';
 import { Textarea } from './ui/textarea';
-import { BookOpen, Users, ClipboardList, Shield, Building2, GraduationCap, Lightbulb, TrendingUp, Mail, Phone, MapPin, Check } from 'lucide-react';
+import { BookOpen, Users, Shield, Building2, GraduationCap, Lightbulb, TrendingUp, Mail, Phone, Check } from 'lucide-react';
 import { toast } from 'sonner';
 
 interface HomePageProps {

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Button } from './ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from './ui/tabs';
@@ -29,7 +29,6 @@ export function Dashboard({ onLogout }: DashboardProps) {
   // Calculate statistics
   const totalStudents = teacherStudents.length;
   const totalAssignments = teacherAssignments.length;
-  const draftAssignments = teacherAssignments.filter(a => a.status === 'draft').length;
   const activeAssignments = teacherAssignments.filter(a => a.status === 'active').length;
   const completedAssignments = teacherAssignments.filter(a => a.status === 'completed').length;
 

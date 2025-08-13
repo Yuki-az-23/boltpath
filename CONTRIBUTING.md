@@ -29,7 +29,7 @@ Thank you for your interest in contributing to BoltPath! We welcome contribution
 1. **Fork the repository** on GitHub
 2. **Clone your fork** locally:
    ```bash
-   git clone https://github.com/yourusername/boltpath-pbl-platform.git
+   git clone https://github.com/Yuki-az-23/boltpath.git
    cd boltpath-pbl-platform
    ```
 3. **Install dependencies**:
